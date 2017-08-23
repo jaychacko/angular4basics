@@ -1,0 +1,10 @@
+<app-server></app-server>
+coming from servers....
+<app-server></app-server>
+<input type="text" [(ngModel)]="serverName">
+<button class="btn btn-primary" (click)="onCreateServer()" [disabled]="!allowNewserver">Add server</button>
+<p>{{serverCreationStatus}}</p>
+
+<p *ngIf="serverngif;else noServer">server is ready learning ng if</p>
+
+<ng-template #noServer>nothing here to se</ng-template>
